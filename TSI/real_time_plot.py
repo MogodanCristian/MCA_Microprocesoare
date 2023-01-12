@@ -16,7 +16,7 @@ def plot_data():
     if (cond == True):
         a = s.readline()
         a.decode()
-        print(a);
+        print(a)
 
         if (len(data) < 100):
             data = np.append(data, float(a[0:4]))
@@ -74,7 +74,7 @@ stop = tk.Button(root, text="Stop", font=(
 stop.place(x=start.winfo_x() + start.winfo_reqwidth() + 20, y=425)
 
 # Serial Port
-s = sr.Serial('COM8', 9600)
+s = sr.Serial('COM9', 9600)
 
 if s.isOpen():
     print(s.name + ' is open...')
